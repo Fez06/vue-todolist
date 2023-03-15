@@ -17,7 +17,7 @@
             <ul>
                 <li v-for="(item, index) in todoItems" :class="{marked: item.done}">
                 <div>{{item.text}}</div>
-                <div @click="removeTodo"><i class="fa-solid fa-skull"></i></div>
+                <div @click="removeTodo(index)"><i class="fa-solid fa-skull"></i></div>
                 </li>
             </ul>
         </div>

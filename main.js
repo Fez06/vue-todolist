@@ -33,10 +33,8 @@ createApp({
             // this.todoItems = this.todoItems.splice(index, 1)
             // console.log(index);
             // console.log(this.todoItems);
-            /*this.todoItemsUpdated =*/ this.todoItems.splice(index, 1);
-            //this.todoItems = this.todoItemsUpdated;
+            this.todoItemsUpdated = this.todoItems.splice(index, 1);
             console.log(index);
-            console.log(this.todoItemsUpdated);
         }
     }
 }).mount('#App'); 
