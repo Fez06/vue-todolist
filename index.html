@@ -12,7 +12,7 @@
     <div id="App">
         <h2>ToVue List</h2>
         <ul>
-            <li v-for="item in todoItems" v-if="1===1 ? true : false">
+            <li v-for="item in todoItems" :class="{marked: item.done}">
                 {{item.text}}
             </li>
         </ul>

@@ -8,27 +8,28 @@ createApp({
             todoItems: [
                 {
                     text:'fare la spesa',
-                    bool: false
+                    done: false
                 },
                 {
                     text:'fare una corsa',
-                    bool: false
+                    done: false
                 },
                 {
                     text:'leggere 20 pagine',
-                    bool: false
+                    done: false
                 },
                 {
                     text:'passare da gigi',
-                    bool: true
+                    done: true
                 }
             ]
         }
     },
 
     methods: {
-        done(element) {
-            element.classList.add('marked')
+        itemDone() {
+            console.log('questo todo e stato completato')
+            //li.classList.add('marked')
         }
     }
 }).mount('#App')
