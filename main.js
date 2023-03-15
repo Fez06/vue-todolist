@@ -5,6 +5,7 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
+            todoItemsUpdated: [''],
             todoItems: [
                 {
                     text:'fare la spesa',
@@ -27,9 +28,15 @@ createApp({
     },
 
     methods: {
-        itemDone() {
-            console.log('questo todo e stato completato')
-            //li.classList.add('marked')
+        removeTodo(index) {
+            console.log('ci hai provato')
+            // this.todoItems = this.todoItems.splice(index, 1)
+            // console.log(index);
+            // console.log(this.todoItems);
+            /*this.todoItemsUpdated =*/ this.todoItems.splice(index, 1);
+            //this.todoItems = this.todoItemsUpdated;
+            console.log(index);
+            console.log(this.todoItemsUpdated);
         }
     }
-}).mount('#App')
+}).mount('#App'); 
