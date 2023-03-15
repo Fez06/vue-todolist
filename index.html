@@ -10,8 +10,14 @@
 </head>
 <body>
     <div id="App">
-        
+        <h2>ToVue List</h2>
+        <ul>
+            <li v-for="item in todoItems" v-if="1===1 ? true : false">
+                {{item.text}}
+            </li>
+        </ul>
     </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
