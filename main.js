@@ -42,6 +42,13 @@ createApp({
             //this.nota += {text: this.nota.value ,done: false, };
             nota.value = '';
             console.log(nota.value)
-        }
+        },
+        // toggleMarked() {
+        //     if (this.done = false) {
+        //         this.item.done = true;
+        //     } else {
+        //         item.done = false;
+        //     }
+        //}
     }
 }).mount('#App'); 
