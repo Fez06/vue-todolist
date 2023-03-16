@@ -43,12 +43,15 @@ createApp({
             nota.value = '';
             console.log(nota.value)
         },
-        // toggleMarked() {
-        //     if (this.done = false) {
-        //         this.item.done = true;
-        //     } else {
-        //         item.done = false;
-        //     }
-        //}
+        toggleMarked(element) {
+            console.log(this.todoItems[element].done);
+            //this.todoItems[element].done = !this.todoItems[element].done;
+            //console.log(this.todoItems[element].done);
+            if (this.todoItems[element].done === false) {
+                this.todoItems[element].done = true;
+            } else {
+                this.todoItems[element].done = false;
+            }
+        }
     }
 }).mount('#App'); 
