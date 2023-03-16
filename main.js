@@ -5,6 +5,7 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
+            nota : '',
             todoItemsUpdated: [''],
             todoItems: [
                 {
@@ -29,12 +30,18 @@ createApp({
 
     methods: {
         removeTodo(index) {
-            console.log('ci hai provato')
+            console.log('cancellatooooooohhhhh')
             // this.todoItems = this.todoItems.splice(index, 1)
             // console.log(index);
             // console.log(this.todoItems);
             this.todoItemsUpdated = this.todoItems.splice(index, 1);
             console.log(index);
+        },
+        addTodo() {
+            this.todoItems.push({text: nota.value ,done: false});
+            //this.nota += {text: this.nota.value ,done: false, };
+            nota.value = '';
+            console.log(nota.value)
         }
     }
 }).mount('#App'); 
