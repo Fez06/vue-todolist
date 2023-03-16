@@ -16,8 +16,9 @@
             <h2>ToVue List</h2>
 
             <label for="nota">Crea un memo!</label>
-            <input type="text" id="nota" name="nota">
-            <input type="submit" value="Aggiungi" @click="addTodo">
+            <input type="text" id="nota" name="nota" @keyup.enter="addTodo">
+            <input type="submit" value="Aggiungi" @click="addTodo"
+            >
 
             <ul>
                 <li v-for="(item, index) in todoItems" :class="{marked: item.done}">
